@@ -3,7 +3,7 @@ import React from "react";
 class Detail extends React.Component {
     componentDidMount() {
         const { location, history } = this.props;
-        if(location.state === undefined) {      // 유저를 데려와서 홈으로 리다이렉트
+        if (location.state === undefined) {      // 유저를 데려와서 홈으로 리다이렉트
             history.push("/");
         }
     }
